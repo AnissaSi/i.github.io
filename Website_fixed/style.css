@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+
+nav {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    font-weight: lighter;
+    position: relative;
+    width: 100%;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: lighter;
+    color: grey;
+  }
+  
+  .Title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .other-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+
+.menu-text {
+    display: flex;
+    font-size: 50px;
+    align-items: center;
+
+}
+
+.navbar-container {
+    overflow-x: auto;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    white-space: nowrap;
+
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Media Query für das Einklappen der Navigationsleiste */
+@media (max-width: 600px) {
+    .navbar-links {
+        display: none;
+    }
+}
+
+/* CSS-Code für die Scrollanimation */
+body.scroll-animation {
+    scroll-behavior: smooth;
+}
+
+.nav_logo h1 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    list-style-type: none;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    display: flex;
+    position: relative;
+}
+
+nav ul li:hover {
+    border-bottom: 4px solid rgb(255, 233, 252);
+}
+
+nav ul li a {
+    color: rgb(124, 123, 123);
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.Ringe {
+    font-size: 25px;
+    color: rgb(124, 123, 123);
+    text-align: center;
+    padding: 20px;
+}
+
+.Schrift {
+    font-size: 20px;
+    color: rgb(124, 123, 123);
+    text-align: center;
+    padding: 20px;
+}
+
+.image-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+#scene-container {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(240, 180, 215);
+}
+
+@media (max-width: 668px) {
+    #Titelbild {
+        content: url(Bilder/StartbildschirmHandy.png);
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 669px) {
+    #Titelbild {
+        content: url(Bilder/Desktop.png);
+        height: auto;
+        width: 100%;
+    }
+}
+.image-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+    height: 100%;
+    margin-bottom: 10%;
+    
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  .image-container img:hover {
+    transform: scale(1.1);
+  }
+
+  .image-container2{   
+  text-align: center;
+  padding: 20px;
+  max-width: 100%;
+  height: 100%;
+  margin-bottom: 10%;
+  }
+  
+  .schriften{
+  font-size: 20px;
+  color: rgb(124, 123, 123);
+  text-align: center;
+  padding: 20px;
+}
+.schriften2{
+    font-size: 20px;
+  color: rgb(124, 123, 123);
+  text-align: center;
+  padding: 20px;
+
+}
+   .image-container1{
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    transition: transform 0.3s ease;
+
+   } 
+   .buy-button {
+    display: block;
+    margin-top: 10px;
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .buy-button:hover {
+    background-color: #c62828;
+  }
+  
+   .image-container img.responsive-img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 668px) {
+    #Bild1 {
+      content: url(Bilder/handy1..png); /* Pfad zum handy Bild */
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (min-width: 669px) {
+    #Bild1{
+      content: url(Bilder/1.seite.png); /* Pfad zum desktop Bild */
+      width: 100%;
+      height: auto;
+    }
+}
+  
+@media (max-width: 668px) {
+  #Bild2 {
+    content: url(Bilder/handy2..png); /* Pfad zum handy Bild */
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 669px) {
+  #Bild2 {
+    content: url(Bilder/2.seite.png); /* Pfad zum desktop Bild */
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 668px) {
+    #Bild3 {
+      content: url(Bilder/handy3..png); /* Pfad zum handy Bild */
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (min-width: 669px) {
+    #Bild3 {
+      content: url(Bilder/3.seite.png); /* Pfad zum desktop Bild */
+      width: 100%;
+      height: auto;
+    }
+}
+    @media (max-width: 668px) {
+        #Bild4 {
+          content: url(Bilder/handy4..png); /* Pfad zum handy Bild */
+          width: 100%;
+          height: auto;
+        }
+    }
+      @media (min-width: 669px) {
+        #Bild4 {
+          content: url(Bilder/4.seite.png); /* Pfad zum desktop Bild */
+          width: 100%;
+          height: auto;
+  }
+}
+  
+   /* ... bisheriger CSS-Code ... */
+
+.footer {
+    background-color: rgb(245, 185, 215);
+    color:grey;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .footer-links ul li a {
+    color:grey;
+    text-decoration: none;
+  }
+  
+  .footer-social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-social ul li {
+    margin-right: 10px;
+  }
+  
+  .footer-social ul li a {
+    color:grey;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Stil für Hover-Effekt der Links im Footer */
+  .footer-links ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Stil für Hover-Effekt der Social-Media-Symbole im Footer */
+  .footer-social ul li a:hover {
+      color: hotpink;
+  }
+
+  
+  
+  
+  
+
